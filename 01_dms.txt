@@ -1,0 +1,16 @@
+DMS: Data migration service
+
+    Source, Target
+    SCT: schema conversion tool
+    
+
+    Scan the logs of database (logging should be enable in source database)
+    Source tables must have a primary key 
+
+    Configure DMS:
+        Replication instance: the resources we will alocate to run the migration
+        Endpoints: declare sources and targets, and credentials to access them
+
+        Data migration task: configure source, replication instance and target
+                            choose if it run once or continusly
+                            choose schema and tables

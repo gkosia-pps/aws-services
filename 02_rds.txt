@@ -1,0 +1,9 @@
+RDS: relational database system
+
+    MySQL, MariaDB, PostgreSQL, Ortacle, MSSQL
+    Amazon Aurora
+
+
+    Storage is allocated in the same AZ of the service
+    Can select SSD or magnetic disc
+    Bill is per instance hourly rate and for storage allocated

@@ -1,0 +1,38 @@
+Lamda functions: serverless code
+
+    Pros:
+        Autoscaling
+        No infrustructure to provision and maintain
+        Bill on cpu usage per milisecond
+        Multiple programming languages
+    
+    Cons:
+        Cold starts: delay on function start at the first time
+        Limited execution time 
+        Vendor Lock: code has been change to deployed to other vendors
+
+    Triggers: 
+        Http, CLI, aws services (s3..), schedule interval(cron expression) via CloudWatch
+    Lamda components:
+
+        Functions: small stateless computing that execute code in response to event
+        Applications: serverless eventdriven computing 
+
+    Code: create a function from scratch
+
+        def lambda_handler(event, context)
+
+        lambda_handler function as the main starting point for your code
+        event: infrmation about what trigger the function
+        context: tools for function(how much memory, how many time hav to execute)
+
+    How to deploy:
+
+        Create a zip with code and runtime libraries
+        Upload it to s3
+
+        In function go to Settings -> Code -> Upload and set the s3 url
+        In Runtime section 
+    
+    Test:
+        I can test the function in the consol by sending test events and params as json
